@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F1F8"
+    tools:context=".MainActivity">
+
+    <!-- TextView : Enter a name -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:background="#53D8E8"
+        android:gravity="center"
+        android:text="Enter a name"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- EditText : saisir le nom -->
+    <EditText
+        android:id="@+id/eTName"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:background="#53D8E8"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView : résultat -->
+    <TextView
+        android:id="@+id/tvHALLO"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:background="#53D8E8"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="Salut"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTName" />
+
+    <!-- Bouton -->
+    <Button
+        android:id="@+id/btnHALLO"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:onClick="onClick"
+        android:text="accueillir"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHALLO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
