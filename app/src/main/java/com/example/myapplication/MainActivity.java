@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     // Méthode appelée quand on clique sur le bouton
     public void onClick(View view) {
         if (etName.getText().length() == 0) {
-            tvHallo.setText("Bonjour");
+            tvHallo.setText("Bonjour Haniya");
         } else {
             String str = etName.getText().toString();
             String strr = "HALLO " + str;
